@@ -31,7 +31,7 @@ function reset(){
 }
 
 // Stopwatch Timer Function
-
+setInterval("runWatch()", 10)
 function runWatch(){
      if(watch == true){
         msec++;
@@ -62,7 +62,7 @@ function runWatch(){
         if(min < 10){
             Minute= "0" + min;
         }
-        setTimeout("runWatch()",10 )
+        
         document.getElementById("sec").innerHTML=Second;
         document.getElementById("min").innerHTML=Minute;
         document.getElementById("msec").innerHTML=Milisec;
